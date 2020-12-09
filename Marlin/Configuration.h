@@ -833,8 +833,8 @@
 #elif (SK_USTEPS == 16)
 
   #if (SK_STEPPER == 9)
-      #define STEPS_X 200
-      #define STEPS_Y 200
+      #define STEPS_X 160 // 200
+      #define STEPS_Y 160 // 200
   #else
     #if SK_USE_S42B
       #define STEPS_X 204.8
@@ -1515,7 +1515,7 @@
 
 // Homing speeds (mm/m)
 #if (SK_DRIVER == 2209)
-#define HOMING_FEEDRATE_XY (50*60)
+#define HOMING_FEEDRATE_XY (100*60)
 #else
 #define HOMING_FEEDRATE_XY (60*60)
 #endif
